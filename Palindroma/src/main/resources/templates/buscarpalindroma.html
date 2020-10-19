@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title>
+</head>
+<body>
+<h1>Hola</h1>
+	<h1 th:text="${cadenaPalindromo}"></h1>
+	<form th:action="@{/palindroma}"  method="post" modelAttribute="texto">
+		<p>Texto</p>
+		<input type="text" th:text="${texto}" /></td>
+		<p><input type="submit" value = "Enviar"></p>
+	</form>
+</body>
+</html>
